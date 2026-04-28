@@ -1,0 +1,30 @@
+type StockStatus = 
+ variant {
+   InStock;
+   Low;
+   OutOfStock;
+ };
+type BikePart = 
+ record {
+   brand: text;
+   category: text;
+   description: text;
+   distance: text;
+   id: text;
+   imageUrl: text;
+   name: text;
+   price: nat;
+   sellerAddress: text;
+   sellerName: text;
+   sellerPhone: text;
+   stock: StockStatus;
+ };
+service : {
+  filterByBrand: (brand: text) -> (vec BikePart) query;
+  filterByCategory: (category: text) -> (vec BikePart) query;
+  getAllParts: () -> (vec BikePart) query;
+  getFilteredParts: (q: text, brand: text, category: text) ->
+   (vec BikePart) query;
+  getPartById: (id: text) -> (opt BikePart) query;
+  searchParts: (q: text) -> (vec BikePart) query;
+}

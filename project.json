@@ -1,0 +1,25 @@
+{
+  "overview": "A clean, light-themed bike spare parts discovery platform. Search and filter by brand or part category to find nearby shops selling the exact parts you need, with smooth animations and a fully interactive experience.",
+  "features": [
+    "Real-time search across bike parts by name",
+    "Brand tabs for KTM, Honda, Bajaj, Yamaha with active filtering",
+    "Category chips (Brakes, Engine, Chain, Tyres, Accessories) with toggle selection",
+    "Product grid with real images, price in ₹, stock status, and distance",
+    "Product detail modal with seller info and action buttons",
+    "Nearby shops map section",
+    "Page load staggered animations and scroll-triggered reveal",
+    "Smooth hover and filter transition effects",
+    "Fully responsive layout (1–3 columns)"
+  ],
+  "category": "productivity",
+  "tags": [
+    "bike",
+    "spare-parts",
+    "marketplace",
+    "search",
+    "filters",
+    "light-theme",
+    "animations"
+  ],
+  "last_updated": "2026-04-27T19:53:02.926Z"
+}

@@ -1,0 +1,27 @@
+// Version: 1.0.0
+type BikePart__300736764 =
+  {
+    brand : Text;
+    category : Text;
+    description : Text;
+    distance : Text;
+    id : Text;
+    imageUrl : Text;
+    name : Text;
+    price : Nat;
+    sellerAddress : Text;
+    sellerName : Text;
+    sellerPhone : Text;
+    stock : StockStatus__983139443
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type StockStatus__983139443 = {#InStock; #Low; #OutOfStock};
+actor {
+  stable parts :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?BikePart__300736764]];
+      var elementIndex : Nat__490723111
+    }
+};
